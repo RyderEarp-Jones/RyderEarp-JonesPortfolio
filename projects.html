@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ryder Earp-Jones | Projects</title>
+    <meta
+      name="description"
+      content="Engineering projects by Ryder Earp-Jones across power systems, embedded systems, robotics, assistive technology, and digital design."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="index.html">Ryder Earp-Jones</a>
+        <div class="nav-links">
+          <a href="index.html">About</a>
+          <a aria-current="page" href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://github.com/RyderEarp-Jones">GitHub</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-heading">
+        <p class="eyebrow">Selected Engineering Work</p>
+        <h1>Projects</h1>
+      </section>
+
+      <section class="project-list">
+        <article class="project-card wide">
+          <img src="assets/ucm-battery-display-render.png" alt="UCM battery charge display PCB render">
+          <div class="project-copy">
+            <p class="tag">Embedded Systems | Formula SAE</p>
+            <h2>UCM Battery Charge Display System</h2>
+            <div class="text-pair">
+              <div>
+                <h3>What?</h3>
+                <p>Designed and built a real-time battery charge display system for the UCM Formula SAE charging unit, giving the team direct visibility of charging data without needing external tools.</p>
+              </div>
+              <div>
+                <h3>How?</h3>
+                <p>Developed a 4-layer custom PCB around an ESP32-S3, integrated CAN-bus decoding, and displayed high-precision voltage and temperature readings on a 16x2 LCD. The design was reported as meeting the UCM team requirements and FSAE-A 2025 rules, with live data refresh rates up to 30 fps.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card wide">
+          <div class="video-frame">
+            <video controls muted playsinline preload="metadata" poster="assets/sip-title.jpg">
+              <source src="assets/sip-and-puff-demo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="project-copy">
+            <p class="tag">Assistive Technology | SaaSathon</p>
+            <h2>Sip-and-Puff Assistive Communication System</h2>
+            <div class="text-pair">
+              <div>
+                <h3>What?</h3>
+                <p>
+                  A predictive personal-notes app concept designed around sip-and-puff input to make
+                  daily writing more accessible and affordable for paraplegic individuals who may
+                  not be able to use a conventional keyboard and mouse. The project explored
+                  a lower-cost alternative to dedicated assistive writing systems using a personal
+                  prediction interface and simple input hardware.
+                </p>
+              </div>
+              <div>
+                <h3>How?</h3>
+                <p>
+                  Combined a low-cost sip-and-puff hardware concept with a software interface using
+                  large targets, dwell-click support, stable predictions, and live learning. The
+                  hardware concept used pressure sensing, Arduino-based input, 3D-printed parts,
+                  and food-safe tubing, with the demo focused on fast template-based note writing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card wide">
+          <div class="media-grid compare">
+            <figure>
+              <img src="assets/south-island-before.png" alt="Original South Island transmission network model">
+              <figcaption>Before</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/south-island-after.png" alt="Modified South Island transmission network model after recommended upgrades">
+              <figcaption>After</figcaption>
+            </figure>
+          </div>
+          <div class="project-copy">
+            <p class="tag">Power Systems | LFH</p>
+            <h2>South Island Power System Planning Study</h2>
+            <div class="text-pair">
+              <div>
+                <h3>What?</h3>
+                <p>
+                  A university planning study evaluating whether thirteen committed and proposed
+                  South Island grid developments could be accommodated in a modelled transmission
+                  system. The study considered demand growth, industrial electrification, HVDC
+                  changes, renewable generation, transformer loading, voltage limits, and fault levels.
+                </p>
+              </div>
+              <div>
+                <h3>How?</h3>
+                <p>
+                  Used LFH load-flow and fault analysis to model network modifications, compare
+                  base and post-instate conditions, and develop a coordinated package of generation,
+                  transmission, voltage-support, transformer, and circuit-breaker upgrades.
+                  The final case converged with no overloaded circuits, reduced losses to about
+                  70 MW, and identified 135 circuit breakers requiring replacement or uprating.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="media-grid">
+              <img src="assets/robotic-surveyor-pcb-render.png" alt="Robotic area surveyor PCB render">
+              <img src="assets/robotic-surveyor-photo.png" alt="Robotic area surveyor prototype photo">
+            </div>
+            <div class="project-copy">
+              <p class="tag">Robotics | Arduino</p>
+              <h2>Robotic Area Surveyor</h2>
+              <h3>What?</h3>
+              <p>Built an Arduino-based robot to map under-house areas using ultrasonic sensing and real-time motion tracking, reducing the need for manual inspection in tight spaces.</p>
+              <h3>How?</h3>
+              <p>Implemented serial movement control, distance and angle tracking, obstacle avoidance, position logging, and onboard LED status indicators. Testing reported under-floor inspection time reduced by over 70% and obstacle detection accuracy within 5 cm.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="media-grid">
+              <img src="assets/breathalyzer-enclosure-render.png" alt="Portable breathalyzer enclosure render">
+              <img src="assets/breathalyzer-pcb-render.png" alt="Portable breathalyzer PCB render">
+            </div>
+            <div class="project-copy">
+              <p class="tag">Sensors | Arduino Nano</p>
+              <h2>Portable Breathalyzer</h2>
+              <h3>What?</h3>
+              <p>Designed and built a USB-powered portable breathalyzer using an MQ-3 alcohol sensor and Arduino Nano, removing the need for a battery in the prototype.</p>
+              <h3>How?</h3>
+              <p>Developed C++ firmware with three-sample averaging, real-time detection, LED/LCD/buzzer feedback, and a 3D-printed enclosure. The prototype reduced unit cost to under $40 NZD and achieved 100% detection accuracy at tested BAC levels at or above 154 ug/L, with response time under 6 seconds.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/fpga-reaction-timer-board.png" alt="Nexys A7 FPGA board running reaction timer display">
+            <div class="project-copy">
+              <p class="tag">Digital Design | VHDL</p>
+              <h2>FPGA Reaction Timer</h2>
+              <h3>What?</h3>
+              <p>Developed a modular reaction timer on a Nexys 4 DDR FPGA using behavioural and structural VHDL across ten modules.</p>
+              <h3>How?</h3>
+              <p>Built modules for the FSM, ALU, LFSR-based PRNG, input debouncing, button UI, and seven-segment display control. The timer used random 0-500 ms delays to reduce anticipation errors and displayed average, maximum, and minimum reaction times.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="media-grid">
+              <img src="assets/stm32-step-counter-board.png" alt="STM32 Nucleo step counter hardware">
+              <img src="assets/stm32-step-counter-console.png" alt="STM32 step counter serial output">
+            </div>
+            <div class="project-copy">
+              <p class="tag">Embedded Firmware | STM32</p>
+              <h2>STM32 Step Counter</h2>
+              <h3>What?</h3>
+              <p>Developed a modular step counter on an STM32 Nucleo platform using onboard MEMS accelerometer data and real-time filtering.</p>
+              <h3>How?</h3>
+              <p>Designed an 8-tap moving average filter, threshold-based step detection, a 270 ms cooldown, and a cooperative scheduler with 50 Hz sampling. Video-logged trials reported greater than 95% step detection accuracy across varied walking speeds and holding positions.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Ryder Earp-Jones</span>
+      <a href="mailto:ryderearpjones@gmail.com">ryderearpjones@gmail.com</a>
+    </footer>
+  </body>
+</html>
